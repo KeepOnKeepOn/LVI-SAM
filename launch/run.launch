@@ -1,5 +1,6 @@
 <launch>
-
+    <node pkg="rs_to_velodyne" name="rs_to_velodyne" type="rs_to_velodyne"  args="XYZIRT XYZIRT"   output="screen"/>
+    
     <!--- Robot State TF -->
     <include file="$(find lvi_sam)/launch/include/module_robot_state_publisher.launch" />
 
